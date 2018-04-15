@@ -30,4 +30,4 @@ def menu():
 	ip = input('IP Adress (example:158.140.168.249): ')
 	port = input ('Port (example: 3128 : ')
 	x = Prox(ip,port)
-menu()
+menu() 
