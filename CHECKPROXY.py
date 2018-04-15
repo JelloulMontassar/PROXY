@@ -10,7 +10,7 @@ class Prox:
 		self.proxy = {}
 		self.ip = ip
 		self.port = port
-		self.proxy['https'] = (self.ip+':'+self.port) 
+		self.proxy['https'] = (self.ip+':'+self.port)  #U CAN  USE  HTTP/S
 		url = 'https://whatismyipaddress.com/'
 		resp = requests.post(url, proxies=self.proxy,headers=self.headers)
 		soup = BeautifulSoup(resp.text, 'lxml')
